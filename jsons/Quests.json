@@ -35,6 +35,7 @@
   {
     "name": "Construct Wonder",
     "description": "We recommend you to start building [wonder] to show the whole world your civilization strength.",
+    "influence": 45,
       "weightForCityStateType": {
           "Cultured": 3
       }
@@ -138,7 +139,7 @@
           "Religious": 0.5
       }
   },
-  {
+    {
     "name": "Invest",
     "description": "Our people are rejoicing thanks to a tourism boom. For a certain amount of time, any Gold donation will yield [50]% extra Influence.",
     "type": "Global",
@@ -147,28 +148,6 @@
     "minimumCivs": 2,
       "weightForCityStateType": {
           "Mercantile": 1.5
-      }
-  },
-  {
-    "name": "Bully City State",
-    "description": "We are tired of the pretensions of [cityState]. If someone were to put them in their place by Demanding Tribute from them, they would be rewarded.",
-    "duration": 30,
-      "weightForCityStateType": {
-          "Hostile": 2,
-          "Irrational": 1.5,
-          "Friendly": 0.3
-      }
-  },
-  {
-    "name": "Denounce Civilization",
-    "description": "We have been forced to pay tribute to [civName]! We need you to tell the world of their ill deeds.",
-    "duration": 30,
-      "weightForCityStateType": {
-          "Cultured": 1.5,
-          "Maritime": 2,
-          "Mercantile": 1.5,
-          "Militaristic": 1.5,
-          "Religious": 2.5
       }
   },
   {
