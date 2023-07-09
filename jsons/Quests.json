@@ -69,7 +69,7 @@
     "name": "Give Gold",
     "description": "We are suffering great poverty after being robbed by [civName], and unless we receive a sum of Gold, it's only a matter of time before we collapse.",
     "influence": 20,
-    "duration": 30,
+    "duration": 20,
       "weightForCityStateType": {
           "Cultured": 3,
           "Maritime": 3,
@@ -82,7 +82,7 @@
     "name": "Pledge to Protect",
     "description": "We need your protection to stop the aggressions of [civName]. By signing a Pledge of Protection, you'll confirm the bond that ties us.",
     "influence": 20,
-    "duration": 30,
+    "duration": 20,
       "weightForCityStateType": {
           "Cultured": 3.5,
           "Maritime": 3,
@@ -95,7 +95,7 @@
     "name": "Contest Culture",
     "description": "The civilization with the largest Culture growth will gain a reward.",
     "type": "Global",
-    "duration": 30,
+    "duration": 16,
     "minimumCivs": 3,
       "weightForCityStateType": {
           "Cultured": 2,
@@ -109,7 +109,7 @@
     "name": "Contest Faith",
     "description": "The civilization with the largest Faith growth will gain a reward.",
     "type": "Global",
-    "duration": 30,
+    "duration": 16,
     "minimumCivs": 3,
       "weightForCityStateType": {
           "Cultured": 0.5,
@@ -123,7 +123,7 @@
     "name": "Contest Technologies",
     "description": "The civilization with the largest number of new Technologies researched will gain a reward.",
     "type": "Global",
-    "duration": 30,
+    "duration": 16,
     "minimumCivs": 3,
       "weightForCityStateType": {
           "Religious": 0.5
@@ -134,7 +134,7 @@
     "description": "Our people are rejoicing thanks to a tourism boom. For a certain amount of time, any Gold donation will yield [50]% extra Influence.",
     "type": "Global",
     "influence": 0,
-    "duration": 30,
+    "duration": 20,
     "minimumCivs": 2,
       "weightForCityStateType": {
           "Mercantile": 1.5
