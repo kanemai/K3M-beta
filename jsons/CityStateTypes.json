@@ -42,15 +42,15 @@
         "name": "Religious",
         "friendBonusUniques":  [
             "[+2 Faith] <during the [Ancient era]>",
-            "[+4 Faith] <during the [Classical era]",
-            "[+6 Faith] <during the [Medieval era]",
+            "[+4 Faith] <during the [Classical era]>",
+            "[+6 Faith] <during the [Medieval era]>",
             "[+8 Faith] <during the [Renaissance era]>",
             "[+10 Faith] <starting from the [Industrial era]>"
         ],
         "allyBonusUniques":  [
             "[+5 Faith] <during the [Ancient era]>",
-            "[+8 Faith] <during the [Classical era]",
-            "[+11 Faith] <during the [Medieval era]",
+            "[+8 Faith] <during the [Classical era]>",
+            "[+11 Faith] <during the [Medieval era]>",
             "[+14 Faith] <during the [Renaissance era]>",
             "[+18 Faith] <starting from the [Industrial era]>"
         ],
