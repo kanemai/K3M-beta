@@ -20,12 +20,22 @@
         "movementType": "Land"
     },
     {
+        "name": "Paratrooping",
+        "movementType": "Land",
+        "uniques":["Gunpowder"]
+    },
+    {
         "name": "Scout",
         "movementType": "Land"
     },
     {
         "name": "Mounted",
         "movementType": "Land"
+    },
+    {
+        "name": "Mounted Ranged",
+        "movementType": "Land",
+        "uniques": ["Mounted"]
     },
     {
         "name": "Armored",
@@ -79,7 +89,7 @@
     {
         "name": "Helicopter",
         "movementType": "Land",
-        "uniques": ["Can pass through impassable tiles"]
+        "uniques": ["All tiles cost 1 movement", "Can pass through impassable tiles", "May travel on Water tiles without embarking"]
     },
 
     // Deprecated unit types required for mods without a UnitTypes.json file to work
