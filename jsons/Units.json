@@ -549,11 +549,11 @@
 		"unitType": "Sword",
 		"replaces": "Pikeman",
 		"uniqueTo": "Germany",
-		"movement": 2,
+		"movement": 3,
 		"strength": 16,
 		"cost": 45,
 		"requiredTech": "Civil Service",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>", "Can move immediately once bought" ],
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
 		"upgradesTo": "Lancer",
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
@@ -912,8 +912,8 @@
 		"name": "Frigate",
 		"unitType": "Ranged Water",
 		"movement": 5,
-		"strength": 25,
-		"rangedStrength": 28,
+		"strength": 23,
+		"rangedStrength": 25,
 		"cost": 185,
 		"requiredResource": "Iron",
 		"requiredTech": "Navigation",
@@ -928,8 +928,8 @@
 		"replaces": "Frigate",
 		"uniqueTo": "England",
 		"movement": 5,
-		"strength": 30,
-		"rangedStrength": 35,
+		"strength": 25,
+		"rangedStrength": 30,
 		"cost": 185,
 		"requiredResource": "Iron",
 		"uniques": ["[+1] Sight"],
@@ -1218,7 +1218,7 @@
 		"movement": 2,
 		"strength": 70,
 		"cost": 375,
-		"requiredTech": "Plastics",
+		"requiredTech": "Electronics",
 		"upgradesTo": "Mechanized Infantry",
 		"obsoleteTech": "Mobile Tactics",
 		"attackSound": "shot"
@@ -1252,10 +1252,11 @@
 		"unitType": "Ranged Gunpowder",
 		"range": 1,
 		"movement": 2,
-		"strength": 60,
-		"rangedStrength": 60,
+		"strength": 50,
+		"rangedStrength": 50,
 		"cost": 350,
 		"requiredTech": "Ballistics",
+		"promotions": ["Logistics"],
 		"upgradesTo": "Mechanized Infantry",
 		"attackSound": "machinegun"
 		// Upgrades to Bazooka in BNW
@@ -1305,7 +1306,7 @@
 		"name": "Marine",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 65,
+		"strength": 80,
 		"cost": 400,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
@@ -1419,25 +1420,8 @@
 		"cost": 300,
 		"requiredTech": "Combined Arms",
 		"upgradesTo": "Helicopter Gunship",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"uniques": ["[+200]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
-	},
-	{
-		"name": "Atomic Bomb",
-		"unitType": "Atomic Bomber",
-		"movement": 1,
-		"strength": 150,
-		"rangedStrength": 150,
-		"range": 10,
-		"cost": 600,
-		"requiredTech": "Nuclear Fission",
-		"requiredResource": "Uranium",
-		"promotions" : ["Evasion"],
-		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
-			"Blast radius [2]"],
-		"attackSound": "nuke"
-		// Plane rather than a missile - can be based in city or Carrier only.
-		// Can be intercepted, but must die for it not to take effect.
 	},
 	{
 		"name": "Rocket Artillery",
@@ -1448,7 +1432,6 @@
 		"range": 3,
 		"cost": 425,
 		"requiredTech": "Rocketry",
-		"requiredResource": "Aluminum",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
 			"[-1] Sight", "Never appears as a Barbarian unit"],
 		"promotions": ["Indirect Fire"],
@@ -1488,12 +1471,10 @@
 		"cost": 1000,
 		"requiredTech": "Advanced Ballistics",
 		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
-			"Blast radius [2]", "Consumes [2] [Uranium]"],
+			"Blast radius [2]", "Consumes [2] [Uranium]", "Cannot be purchased"],
 		"attackSound": "nuke"
 	},
 	{
-		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
-		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
 		"movement": 6,
@@ -1501,7 +1482,7 @@
 		"cost": 425,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
-		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
+		"uniques": ["[+200]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
 			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
 		"attackSound": "machinegun"
 	},
@@ -1578,6 +1559,7 @@
 		"cost": 425,
 		"requiredTech": "Nuclear Fusion",
 		"requiredResource": "Uranium",
+		"promotions": ["Interception III"],
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
 		"attackSound": "gdrAttack"
 	},
