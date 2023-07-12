@@ -167,7 +167,7 @@
 		"strength": 10,
 		"cost": 45,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit", "Can move after attacking", "[-33]% Strength <vs cities> <when attacking>"],
 		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
@@ -216,7 +216,7 @@
 	},
 	{
 		"name": "Chariot Archer",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"movement": 4,
 		"strength": 6,
 		"rangedStrength": 10,
@@ -230,7 +230,7 @@
 	},
 	{
 		"name": "War Chariot",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"uniqueTo": "Egypt",
 		"replaces": "Chariot Archer",
 		"movement": 5,
@@ -245,7 +245,7 @@
 	},
 	{
 		"name": "Horse Archer",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"uniqueTo": "The Huns",
 		"replaces": "Chariot Archer",
 		"movement": 4,
@@ -261,7 +261,7 @@
 	},
 	{
 		"name": "War Elephant",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"uniqueTo": "India",
 		"replaces": "Chariot Archer",
 		"movement": 3,
@@ -438,6 +438,7 @@
 		"upgradesTo": "Trebuchet",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
 			"Must set up to ranged attack", "[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
@@ -455,6 +456,7 @@
 		"upgradesTo": "Trebuchet",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
 			"Must set up to ranged attack", "[-1] Sight"],
+		"promotions": ["Indirect Fire"],
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
@@ -587,7 +589,7 @@
 	},
 	{
 		"name": "Camel Archer",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"replaces": "Knight",
 		"uniqueTo": "Arabia",
 		"movement": 4,
@@ -651,7 +653,7 @@
 	},
 	{
 		"name": "Keshik",
-		"unitType": "Archery",
+		"unitType": "Mounted Ranged",
 		"replaces": "Knight",
 		"uniqueTo": "Mongolia",
 		"range": 2,
@@ -722,6 +724,7 @@
 		"obsoleteTech": "Chemistry",
 		"upgradesTo": "Cannon",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
 		"attackSound": "throw"
 	},
 	{
@@ -997,6 +1000,7 @@
 		"upgradesTo": "Artillery",
 		"obsoleteTech": "Dynamite",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
 		"attackSound": "cannon"
 	},
 
